@@ -60,6 +60,6 @@ view: schema_table_search {
   }
 
   set: required {
-    fields: [table_schema, table_name, column_name, type_convert, comment]
+    fields: [column_name, table_schema, table_name, type_convert, comment]
   }
 }
