@@ -1,0 +1,22 @@
+service: GenerateLookML 
+
+provider:
+  name: aws
+  runtime: python3.7
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: false
+
+functions:
+  schema_table_search:
+    handler: handler.schema_table_search
+    environment:
+      project_config: ${file(./backup/project.config.backup)}
+    events:
+      - http:
+          path: schema_table_search
+          method: post
