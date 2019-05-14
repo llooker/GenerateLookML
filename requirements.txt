@@ -6,5 +6,5 @@ lookml==0.0.4
 PyGithub==1.43.4
 PyJWT==1.7.1
 requests==2.21.0
-urllib3==1.24.2
+urllib3==1.24.3
 wrapt==1.10.11
